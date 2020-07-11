@@ -1,0 +1,128 @@
+{
+  "env": {
+      "browser": true,
+      "es2020": true,
+      "node": true
+  },
+  "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+  ],
+  "parserOptions": {
+      "ecmaFeatures": {
+          "jsx": true
+      },
+      "ecmaVersion": 11,
+      "sourceType": "module"
+  },
+  "plugins": [
+      "react",
+      "react-hooks"
+  ],
+  "rules": {
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "no-unreachable": "error",
+      "react/prop-types": [
+          0
+      ],
+      "space-before-function-paren": ["error", {
+          "anonymous": "always",
+          "named": "never",
+          "asyncArrow": "always"
+      }],
+      "no-multiple-empty-lines": [
+          "error",
+          {
+              "max": 2,
+              "maxEOF": 1,
+              "maxBOF": 0
+          }
+      ],
+      "no-console": [
+          "error"  
+      ],
+      "eol-last": [
+          "error",
+          "always"
+      ],
+      "object-curly-spacing": [
+          "error",
+          "always"
+      ],
+      "array-bracket-spacing": [
+          "error",
+          "never"
+      ],
+      "computed-property-spacing": [
+          "error",
+          "never"
+      ],
+      "no-multi-spaces": [
+          "error"
+      ],
+      "space-infix-ops": [
+          "error"
+      ],
+      "jsx-quotes": [
+          "error"
+      ],
+      "arrow-parens": [
+          "error",
+          "as-needed"
+      ],
+      "semi-spacing": [
+          "error", 
+          {
+              "before": false, 
+              "after": true
+          }
+      ],
+      "comma-dangle": [
+          "error", 
+          {
+              "arrays": "always-multiline",
+              "objects": "always-multiline",
+              "imports": "never",
+              "exports": "never",
+              "functions": "never"
+          }
+      ],
+      "indent": [
+          "error",
+          2,
+          {
+              "SwitchCase": 1
+          }
+      ],
+      "keyword-spacing": [
+          "error",
+          {
+              "before": true,
+              "after": true
+          }
+      ],
+      "comma-spacing": [
+          "error",
+          {
+              "before": false,
+              "after": true
+          }
+      ],
+      "no-trailing-spaces": [
+          "error"
+      ],
+      "linebreak-style": [
+          "error",
+          "unix"
+      ],
+      "quotes": [
+          "error",
+          "single"
+      ],
+      "semi": [
+          "error",
+          "always"
+      ]
+  }
+}

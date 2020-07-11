@@ -1,0 +1,24 @@
+.Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xs);
+  border: none;
+  background: var(--color-blue);
+  border-radius: var(--border-radius-m);
+  color: var(--text-color-white);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  transition: all  var(--animation-default) var(--timing-m);
+}
+
+.Button:hover {
+  background: var(--color-dark-blue);
+}
+
+.Button.Button_disabled {
+  background: var(--color-light-blue);
+  pointer-events: none;
+}

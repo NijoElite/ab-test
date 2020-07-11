@@ -1,0 +1,46 @@
+.Landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Landing-Wrapper {
+  max-width: 100%;
+}
+
+.Landing-Table {
+  overflow: auto;
+}
+
+.Landing-Placeholder {
+  min-width: 140px;
+  background: var(--color-dark-grey);
+  border-radius: var(--border-radius-m);
+}
+
+.Landing-Paranja {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  animation: paranja-glowing 1s var(--animation-default) infinite alternate;
+  background: #ffffff;
+}
+
+.Landing-Footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@keyframes paranja-glowing {
+  0% {
+    opacity: .4;
+  }
+
+  100% {
+    opacity: .7;
+  }
+}

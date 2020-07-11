@@ -1,0 +1,35 @@
+{
+  "name": "ab-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "deps": "npm run deps:backend && npm run deps:frontend",
+    "deps:backend": "npm i",
+    "deps:frontend": "cd ./client && npm i",
+    "clean": "rm -rf ./client/build",
+    "build": "npm run deps && npm run build:frontend",
+    "build:frontend": "cd ./client && npm run build",
+    "dev": "concurrently \"npm:dev:*\"",
+    "dev:backend": "nodemon index.js",
+    "dev:frontend": "cd client && npm run start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "pg": "^8.3.0"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "client/*"
+    ],
+    "delay": "2500"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
